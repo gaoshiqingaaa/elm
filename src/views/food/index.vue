@@ -112,13 +112,6 @@
 </template>
 
 <script>
-var specfoods = [
-  {
-    specs: '11',
-          packing_fee: '11',
-          price: '11'
-  }
-]
 import {foodList, deleteItem, updateItem} from '@/api/index'
 // import {getCookie} from '@/utils/cookie'
   export default {
@@ -145,7 +138,7 @@ import {foodList, deleteItem, updateItem} from '@/api/index'
           image_path: '',
           restaurant_id: '',
           category_id: '',
-          specfoods: specfoods
+          specfoods: []
         },
         formLabelWidth: '120px',
         message: '',
@@ -217,12 +210,11 @@ import {foodList, deleteItem, updateItem} from '@/api/index'
         },
         addSpec(){
             this.innerVisible = false
-            specfoods[specfoods.length] = {
+            this.form.specfoods.push({
                 specs: this.temp.specs,
                 packing_fee: this.temp.packing_fee,
                 price: this.temp.price
-            } 
-            console.log(this.form.specfoods);
+            } )
             this.temp.specs = ''
             this.temp.packing_fee = ''
             this.temp.price = ''

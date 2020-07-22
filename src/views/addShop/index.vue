@@ -115,6 +115,6 @@
 
 <style scoped>
     .el-form-item {
-        /* width: 40%; */
+        width: 40%;
     }
 </style>

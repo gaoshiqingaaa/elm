@@ -63,3 +63,10 @@ export function updateItem(data){
         data: data
     })
 }
+
+export function getUserCity(){
+    return request({
+        url: '/v1/user/city/count',
+        method: 'get',
+    })
+}
