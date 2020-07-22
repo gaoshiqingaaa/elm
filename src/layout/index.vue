@@ -72,8 +72,6 @@
     li .is-active a{
       color: #ffd04b
     }
-    .aaa {
-      color: #ffd04b;
-    }
+
 </style>
 

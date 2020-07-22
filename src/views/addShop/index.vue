@@ -1,6 +1,7 @@
 <template>
     <div>
-        <el-form label-width="100px" class="">
+        <div class='a'>
+            <el-form label-width="100px" class="">
             <el-form-item label="店铺名称" prop="name" required>
                 <el-input v-model="name"></el-input>
             </el-form-item>         
@@ -80,6 +81,7 @@
                 <el-button @click="resetForm('ruleForm')">重置</el-button>
             </el-form-item>
         </el-form>
+        </div>
     </div>
 </template>
 
@@ -116,5 +118,8 @@
 <style scoped>
     .el-form-item {
         width: 40%;
+    }
+    .a {
+
     }
 </style>
