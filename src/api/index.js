@@ -47,3 +47,19 @@ export function managerList(data){
         params: data
     })
 }
+
+export function deleteItem(food_id){
+    return request({
+        url: '/shopping/v2/food/' + food_id,
+        method: 'delete',
+        // params: data
+    })
+}
+
+export function updateItem(data){
+    return request({
+        url: '/shopping/v2/updatefood',
+        method: 'post',
+        data: data
+    })
+}
