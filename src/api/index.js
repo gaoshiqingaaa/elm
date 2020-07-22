@@ -70,3 +70,27 @@ export function getUserCity(){
         method: 'get',
     })
 }
+
+export function addcategory(data){
+    return request({
+        url: '/shopping/addcategory',
+        method: 'post',
+        params: data
+    })
+}
+
+export function addfood(data){
+    return request({
+        url: '/shopping/addfood',
+        method: 'post',
+        params: data
+    })
+}
+
+export function citycount(data){
+    return request({
+        url: '/v1/user/city/count',
+        method: 'get',
+        params: data
+    })
+}
