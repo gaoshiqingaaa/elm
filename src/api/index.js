@@ -16,11 +16,11 @@ export function userList(data){
     })
 }
 
-export function shopList(data){
+export function shoppingList(latitude,longitude){
     return request({
-        url: '/shopping/restaurants',
-        method: 'get',
-        params: data
+        url:'/shopping/restaurants?latitude='+latitude+'&longitude='+longitude,
+        method:'get',
+          //post data   ;get  parms:data
     })
 }
 
