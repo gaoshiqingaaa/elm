@@ -7,22 +7,22 @@
       fixed
       prop="name"
       label="店铺名称"
-      width="210">
+      width="200%">
     </el-table-column>
     <el-table-column
       prop="address"
       label="店铺地址"
-      width="210">
+      width="200%">
     </el-table-column>
     <el-table-column
       prop="category"
       label="店铺介绍"
-      width="210">
+      width="180%">
     </el-table-column>
     <el-table-column
       fixed="right"
       label="操作"
-      width="260">
+      width="300%">
       <template slot-scope="scope">
         <!-- <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
         <el-button type="text" size="small">编辑</el-button> -->
