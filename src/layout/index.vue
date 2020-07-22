@@ -8,7 +8,7 @@
             background-color="#545c64"
             text-color="#fff"
             active-text-color="#ffd04b">
-            <el-menu-item ><router-link to="/manage">首页</router-link></el-menu-item>
+            <el-menu-item ><router-link to="/manage"><i class="el-icon-menu"></i>首页</router-link></el-menu-item>
             <el-submenu index="1">
                 <template slot="title"><i class="el-icon-document"></i>数据管理</template>
                 <el-menu-item index="1-1"><router-link to="/user">用户列表</router-link></el-menu-item>
