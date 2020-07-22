@@ -2,6 +2,7 @@
 import axios from 'axios'
 // import {Message} from 'element-ui'
 // import router from '../router'
+axios.defaults.withCredentials=true
 
 const service = axios.create({
     //baseUrl:
@@ -15,19 +16,20 @@ const service = axios.create({
  * 在发送请求拦截之前，做我们想要做的操作
  */
 
-/*  service.interceptors.request.use(
+ service.interceptors.request.use(
      config=>{
          //登陆之前判断有没有cookie
          //给头部增加cookie
-         //const token = localStrage.getItem('cookie);
-         //config.headers.Authorization = 'token'
+        //  const token = window.localStrage.cookie
+        //  config.headers.Authorization = token
+    
          return config
      },
      error=>{
          console.log(error)
          return Promise.reject(error)
      }
- ) */
+ )
 
  /**响应拦截
   * 服务器返回给我们的数据

@@ -16,6 +16,7 @@
 
 <script>
 import {login} from '@/api/index'
+// import {setCookie} from '@/utils/cookie'
 export default {
     data() {
         return {           
@@ -33,6 +34,7 @@ export default {
                 console.log(res)
                 if (res.data.status == 1)
                 {
+                    // setCookie('SID', this.user_name, 7)
                     this.$router.push('/manage')
                 }
             })
